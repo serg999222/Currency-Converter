@@ -1,0 +1,63 @@
+.App-main {
+	background-color: #535457;
+	height: 50vh;
+	max-width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	box-shadow: 2px 2px 4px rgb(102, 102, 108);
+}
+
+.title-block {
+	display: flex;
+	margin-bottom: 10vh;
+}
+
+.title {
+	margin-right: 3vw;
+}
+.exchange-block{
+	display: flex;
+ }
+
+
+.change-area {
+	margin-right: 10vw;
+}
+
+.change-area__form {
+	margin-top: 10px;
+	height: 25px;
+}
+
+.change-area__form input {
+	height: 19px;
+	width: 100px;
+
+}
+
+.change-area__form select {
+	height: 25px;
+}
+
+.get-area__form {
+	margin-top: 10px;
+	height: 25px;
+}
+
+.get-area__form span {
+
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	font-size: 1em;
+	margin-right: 10px;
+}
+
+.get-area__form select {
+	height: 25px;
+}
