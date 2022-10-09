@@ -61,3 +61,39 @@
 .get-area__form select {
 	height: 25px;
 }
+@media(max-width:420px) {
+	.main {
+		background-color: #535457;
+		height: 80vh;
+		max-width: 90%;
+	
+	}
+	.title-block {
+		margin-top: 0;
+	}
+}
+
+@media(max-width:420px) {
+	.exchange-block{
+		display: block;
+	 }
+	 .change-area{
+		margin: 0;
+	 }
+	 .get-area__form {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		height: 25px;
+	}
+	.change-area__form {
+		margin-top: 0;
+		margin-bottom: 20px;
+		
+	}
+	.get-area__form {
+		margin-top: 0;
+
+	}
+}
+

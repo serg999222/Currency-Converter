@@ -3,11 +3,7 @@
 	bottom: 12px;
 }
 
-@media(max-width:615px) {
-	.Logo__text {
-		display: none;
-	}
-}
+
 
 .Logo img {
 	padding: 0 5px;
@@ -25,26 +21,51 @@
 	justify-content: space-around;
 	font-size: calc(10px + 2vmin);
 	color: white;
- }
- 
- 
- .current-exchange{
+}
+
+
+.current-exchange {
 	position: relative;
 	right: 4vw;
-	flex-wrap: wrap;
- }
- 
- 
- .current__label{
+}
+
+
+.current__label {
 	font-weight: 700;
 	margin-right: 1vw;
-	
- }
- .current__buy{
+
+}
+
+.current__buy {
 	color: rgb(102, 102, 196);
 	margin-right: 1vw;
- }
- .current__sale{
+}
+
+.current__sale {
 	color: crimson;
- }
- 
+}
+
+.current-exchange__usd {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.current-exchange__eur {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media(max-width:615px) {
+	.Logo__text {
+		display: none;
+	}
+}
+
+@media(max-width:350px) {
+	.current-exchange__usd {
+	max-width: 120px;
+	}
+	.current-exchange__eur {
+		max-width: 120px;
+	}
+}
