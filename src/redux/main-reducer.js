@@ -30,18 +30,5 @@ const mainReducer = createSlice({
 	}
 })
 
-// export const getCurrentExchenge = () => {
-// 	return (dispatch) => {
-// 		reqestsApi.setCurrentExchengeApi()
-// 			.then(response => {
-// 				let data = response.data		
-// 				dispatch(setCurrentExchenge(data))
-// 			})
-// 	}
-// }
-
-
-
-
 export default mainReducer.reducer
 export const { setNewCurrChange,setNewSummChange, setNewCurrGet,setSummGet } = mainReducer.actions

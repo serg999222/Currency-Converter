@@ -5,8 +5,6 @@ import mainReducer from './main-reducer'
 let redusers =  combineReducers({
 	currentExchange:currentExchangeReduser,
 	main:mainReducer
-
-
 }) 
 
 

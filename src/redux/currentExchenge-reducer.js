@@ -26,8 +26,5 @@ export const getCurrentExchenge = () => {
 	}
 }
 
-
-
-
 export default currentExchangeReduser.reducer
 export const { setCurrentExchenge } = currentExchangeReduser.actions

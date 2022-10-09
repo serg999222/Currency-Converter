@@ -1,4 +1,4 @@
-.App-main {
+.main {
 	background-color: #535457;
 	height: 50vh;
 	max-width: 80%;
@@ -17,7 +17,7 @@
 	margin-bottom: 10vh;
 }
 
-.title {
+.title-block__title {
 	margin-right: 3vw;
 }
 .exchange-block{

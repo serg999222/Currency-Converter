@@ -8,7 +8,7 @@ function Header(props) {
 	
 	return (
 
-		<header className="App-header">
+		<header className="header">
 			<div className='Logo'><img src={logo} alt="" /><span className='Logo__text'> Currency Converter</span></div>
 		   <CurrentExchange {...props}/>
 

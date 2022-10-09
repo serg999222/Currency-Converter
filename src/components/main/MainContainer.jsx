@@ -6,32 +6,37 @@ import { setNewCurrChange, setNewSummChange, setNewCurrGet, setSummGet } from '.
 
 function MainContainer(props) {
 
+const resultСalculation = (currencyGetting, currencyGiving) => {
+let compare = props.main.get === currencyGetting && props.main.change === currencyGiving
+return compare
+}
+
 	let resultSumm = () => {
-		if (props.main.get === "UAH" && props.main.change === "USD") {
+		if (resultСalculation("UAH", "USD")) {
 			let result = props.main.summChange * +props.usd.buy
 			props.setSummGet(result.toFixed(2))
-		} else if (props.main.get === "UAH" && props.main.change === "EUR") {
+		} else if (resultСalculation("UAH", "EUR")) {
 			let result = props.main.summChange * +props.eur.buy
 			props.setSummGet(result.toFixed(2))
-		} else if (props.main.get === "USD" && props.main.change === "UAH") {
+		} else if (resultСalculation("USD", "UAH")) {
 			let result = props.main.summChange / +props.usd.sale
 			props.setSummGet(result.toFixed(2))
-		} else if (props.main.get === "EUR" && props.main.change === "UAH") {
+		} else if (resultСalculation("EUR", "UAH")) {
 			let result = props.main.summChange / +props.eur.sale
 			props.setSummGet(result.toFixed(2))		
-		}else if (props.main.get === "UAH" && props.main.change === "UAH") {
+		}else if (resultСalculation("UAH", "UAH")) {
 			let result = props.main.summChange
 			props.setSummGet(result)
-		}else if (props.main.get === "EUR" && props.main.change === "USD") {
+		}else if (resultСalculation("EUR", "USD")) {
 			let result = (props.main.summChange * +props.usd.buy)/+props.eur.sale
 			props.setSummGet(result.toFixed(2))
-		}else if (props.main.get === "USD" && props.main.change === "EUR") {
+		}else if (resultСalculation("USD", "EUR")) {
 			let result = (props.main.summChange * +props.eur.buy)/+props.usd.sale
 			props.setSummGet(result.toFixed(2))
-		}else if (props.main.get === "USD" && props.main.change === "USD") {
+		}else if (resultСalculation("USD", "USD")) {
 			let result = props.main.summChange
 			props.setSummGet(result)
-		}else if (props.main.get === "EUR" && props.main.change === "EUR") {
+		}else if (resultСalculation("EUR", "EUR")) {
 			let result = props.main.summChange
 			props.setSummGet(result)
 		}

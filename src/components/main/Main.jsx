@@ -7,10 +7,10 @@ import GetArea from './GetArea'
 function Main(props) {
 	return (
 
-		<main className="App-main">
+		<main className="main">
 			<div className='title-block'>
-				<div className='title'>Converter</div>
-				<div className='date'>Date: 08.10.2022</div>
+				<div className='title-block__title'>Converter</div>
+				<div className='title-block__date'>Date: 08.10.2022</div>
 			</div>
 			<div className='exchange-block'>
 				<ChangeArea {...props}/>
