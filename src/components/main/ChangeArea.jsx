@@ -10,7 +10,7 @@ function ChangeArea(props) {
 		<div className='change-area'>
 			You're giving
 			<form className='change-area__form'>
-				<input value={props.main.summChange} onChange={props.getValueEnteredSumm} type="text" placeholder='enter amount' />
+				<input value={props.main.summChange} onChange={props.getValueEnteredSumm} type="number" placeholder='enter amount' />
 				<select onChange={props.getNewCurrChange} name='currency' id='currency'>
 					<option value="USD">USD</option>
 					<option value="EUR">EUR</option>
