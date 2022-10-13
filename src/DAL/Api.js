@@ -3,12 +3,22 @@ import axios from "axios";
 
 
 
+
 const reqestsApi = {
 
 	setCurrentExchengeApi() {
-		return axios.get('https://api.privatbank.ua/p24api/pubinfo?exchange&json&coursid=11')
+		 return axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
 			.then(response => {
-				return response
+				let currensyes = {0:'USD', 1:'EUR'}
+				
+				let f = response.data.filter(item =>{
+					for(let k in currensyes) {
+						if(currensyes[k] == item.cc ){
+							return true
+						}
+					}
+				})				
+			return f	
 			})
 	}
 }

@@ -4,12 +4,12 @@ import reqestsApi from '../DAL/Api'
 const currentExchangeReduser = createSlice({
 	name: 'currentExchange',
 	initialState: {
-		allСurrency: [0,1]
+		allСurrency: [{cc:'USD', rate:1},{cc:'UAH', rate:1}]
 	},
 
 
 	reducers: {
-		setCurrentExchenge(state, action){		
+		setCurrentExchenge(state, action){	
 			state.allСurrency = action.payload
 			
 		}
@@ -19,9 +19,8 @@ const currentExchangeReduser = createSlice({
 export const getCurrentExchenge = () => {
 	return (dispatch) => {
 		reqestsApi.setCurrentExchengeApi()
-			.then(response => {
-				let data = response.data		
-				dispatch(setCurrentExchenge(data))
+			.then(f => {		
+				dispatch(setCurrentExchenge(f))
 			})
 	}
 }

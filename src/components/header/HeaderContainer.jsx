@@ -9,7 +9,7 @@ import Header from './Header'
 function HeaderContainer(props) {
 	useEffect(() => {
 		props.getCurrentExchenge()
-		setInterval(props.getCurrentExchenge, 500000)
+		// setInterval(props.getCurrentExchenge, 50000)
 	}, [])
 
 	return (
